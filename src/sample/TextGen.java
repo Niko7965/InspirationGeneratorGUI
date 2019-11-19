@@ -5,7 +5,7 @@ package sample;
 
 public class TextGen {
 
-    //* ! $ ?
+    //* ! $
 
     String input1 = "*A girl ";
     String input2 = "goes to church ";
