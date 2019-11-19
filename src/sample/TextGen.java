@@ -5,7 +5,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class TextGen {
 
-    //* ! $ ?
+    //* ! $
 
     String input1 = "!A girl ";
     String input2 = "goes to church ";
