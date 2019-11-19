@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Region prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('/sample/blueflower.png'); -fx-background-position: center; -fx-background-size: cover;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Region prefHeight="400.0" prefWidth="600.0">
+         <effect>
+            <GaussianBlur radius="63.0" />
+         </effect>
+      </Region>
+      <HBox alignment="CENTER" layoutY="150.0" prefHeight="100.0" prefWidth="600.0" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="54.0" prefWidth="600.0">
+               <children>
+                  <Text fx:id="TitleText" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Centered and one" textAlignment="CENTER" wrappingWidth="350.0">
+                     <font>
+                        <Font name="Quicksand Light" size="34.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="imgButton" fitHeight="24.0" fitWidth="59.0" onMousePressed="#submit" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Button.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
