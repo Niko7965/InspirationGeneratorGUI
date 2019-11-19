@@ -11,15 +11,13 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Region prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('/sample/blueflower.png'); -fx-background-position: center; -fx-background-size: cover;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-      <Region prefHeight="400.0" prefWidth="600.0">
+      <Region layoutX="-26.0" layoutY="-30.0" prefHeight="435.0" prefWidth="627.0" style="-fx-background-color: black;" />
+      <Region layoutX="-24.0" layoutY="-38.0" opacity="0.68" prefHeight="456.0" prefWidth="649.0" style="-fx-background-image: url('/sample/blueflower.png'); -fx-background-position: center; -fx-background-size: cover;" AnchorPane.bottomAnchor="-18.0" AnchorPane.leftAnchor="-24.0" AnchorPane.rightAnchor="-25.0" AnchorPane.topAnchor="-38.0">
          <effect>
-            <GaussianBlur radius="63.0" />
-         </effect>
-      </Region>
+            <GaussianBlur radius="28.05" />
+         </effect></Region>
       <HBox alignment="CENTER" layoutY="150.0" prefHeight="100.0" prefWidth="600.0" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
          <children>
             <VBox alignment="CENTER" prefHeight="54.0" prefWidth="600.0">
