@@ -74,12 +74,21 @@ public class TextGen {
 
    public String getInspiration(){
        input1 = thecharacter(ThreadLocalRandom.current().nextInt(0,34));
-       input2 = thescene(ThreadLocalRandom.current().nextInt(0,34));
-       input3 = thetwist(ThreadLocalRandom.current().nextInt(0,34));
+       input2 = " " + thescene(ThreadLocalRandom.current().nextInt(0,34));
+       input3 = commaSpace(thetwist(ThreadLocalRandom.current().nextInt(0,34)));
         return (removePID(input1)) + input2 + insertPronoun(input3,getPronoun(input1));
 
     }
 
+    String commaSpace (String sentence){
+        if (sentence.charAt(0) == ',') {
+            return sentence;
+        }
+        else{
+            return " " + sentence;
+        }
+
+    }
     String insertPronoun (String sentence, int pronounInt){
        String pronoun = "";
         StringBuilder newSentence = new StringBuilder();
