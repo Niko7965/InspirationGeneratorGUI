@@ -32,7 +32,7 @@ public class Main extends Application {
 
     public static void main(String[] args) throws FileNotFoundException {
         launch(args);
-        /* //don't even worry about me, I think I am ready to die anyways :)
+        /*
         public ArrayList<String> characterlist = new ArrayList<String>();
         Scanner scan = new Scanner(new File("files/TheCharacter.txt"));
         while(scan.hasNextLine()){
