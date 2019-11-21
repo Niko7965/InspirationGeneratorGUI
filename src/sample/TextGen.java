@@ -11,10 +11,6 @@ public class TextGen {
 
     public TextGen() {
     }
-    int characterlength;
-    int scenelength;
-    int twistlength;
-
 
     public String thecharacter(int n) {
         ArrayList<String> characterlist = new ArrayList<String>();
@@ -63,6 +59,21 @@ public class TextGen {
 
         System.out.println(twistlist.size());
         return twistlist.get(n);
+    }
+
+    public int length(String n) {
+        ArrayList<String> listlist = new ArrayList<String>();
+        Scanner scan = null;
+        try {
+            scan = new Scanner(new File("files/The"+n+".txt"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        while (scan.hasNextLine()) {
+            listlist.add(scan.nextLine());
+        }
+        scan.close();
+        return (listlist.size()-1);
     }
         //* ! $
 
@@ -186,5 +197,3 @@ public class TextGen {
         }
     }
 }
-
-
