@@ -84,9 +84,9 @@ public class TextGen {
 
 
    public String getInspiration(){
-       input1 = thecharacter(ThreadLocalRandom.current().nextInt(0,34));
-       input2 = " " + thescene(ThreadLocalRandom.current().nextInt(0,34));
-       input3 = commaSpace(thetwist(ThreadLocalRandom.current().nextInt(0,34)));
+       input1 = thecharacter(ThreadLocalRandom.current().nextInt(0,length("Character")));
+       input2 = " " + thescene(ThreadLocalRandom.current().nextInt(0,length("Scene")));
+       input3 = commaSpace(thetwist(ThreadLocalRandom.current().nextInt(0,length("Twist"))));
         return (removePID(input1)) + input2 + insertPronoun(input3,getPronoun(input1));
 
     }
