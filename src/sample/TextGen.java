@@ -1,18 +1,45 @@
 package sample;
 
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class TextGen {
 
-    //* ! $
+    public TextGen() {
+    }
 
-    String input1 = "!A girl ";
+    public String thecharacter(int n) {
+        ArrayList<String> characterlist = new ArrayList<String>();
+        Scanner scan = null;
+        try {
+            scan = new Scanner(new File("files/TheCharacter.txt"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        while (scan.hasNextLine()) {
+            characterlist.add(scan.nextLine());
+        }
+        scan.close();
+
+        System.out.println(characterlist.get(5));
+        return characterlist.get(n);
+    }
+
+
+        //* ! $
+
+    String input1 = thecharacter(ThreadLocalRandom.current().nextInt(0,34));
     String input2 = "goes to church ";
     String input3 = "and meets ¤ mother";
 
 
+
    public String getInspiration(){
+       input1 = thecharacter(ThreadLocalRandom.current().nextInt(0,34));
         return (removePID(input1)) + input2 + insertPronoun(input3,getPronoun(input1));
 
     }
