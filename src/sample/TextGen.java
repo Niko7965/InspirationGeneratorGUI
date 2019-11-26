@@ -262,7 +262,7 @@ public class TextGen {
     String removePID(String input){
         String newinput = "";
         for(int i = 0, n = input.length(); i<n; i++){
-            if(input.charAt(i) != '*' && input.charAt(i) != '!' ){
+            if(input.charAt(i) != '*' && input.charAt(i) != '!'&& input.charAt(i) != '$' ){
                 newinput = newinput+input.charAt(i);
             }
         }

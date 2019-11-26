@@ -19,8 +19,8 @@ public class Controller {
 
 
     @FXML private void submit(MouseEvent event){
-
             TitleText.setText(textgen.getInspiration());
+
 
 
     }

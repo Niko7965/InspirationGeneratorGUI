@@ -13,8 +13,8 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Region layoutX="-26.0" layoutY="-30.0" prefHeight="435.0" prefWidth="627.0" style="-fx-background-color: black;" />
-      <Region layoutX="-24.0" layoutY="-38.0" opacity="0.68" prefHeight="456.0" prefWidth="649.0" style="-fx-background-image: url('/sample/blueflower.png'); -fx-background-position: center; -fx-background-size: cover;" AnchorPane.bottomAnchor="-18.0" AnchorPane.leftAnchor="-24.0" AnchorPane.rightAnchor="-25.0" AnchorPane.topAnchor="-38.0">
+      <Region layoutX="-26.0" layoutY="-30.0" prefHeight="435.0" prefWidth="627.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Region layoutX="-24.0" layoutY="-38.0" opacity="0.68" prefHeight="456.0" prefWidth="649.0" style="-fx-background-image: url('/sample/blueflower.png'); -fx-background-position: center; -fx-background-size: cover;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <effect>
             <GaussianBlur radius="28.05" />
          </effect></Region>
@@ -22,23 +22,31 @@
          <children>
             <VBox alignment="CENTER" prefHeight="54.0" prefWidth="600.0">
                <children>
-                  <Text fx:id="TitleText" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Centered and one" textAlignment="CENTER" wrappingWidth="350.0">
+                  <Text fx:id="TitleText" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Press the button to generate your idea!" textAlignment="CENTER" wrappingWidth="350.0">
                      <font>
                         <Font name="Quicksand Light" size="34.0" />
                      </font>
                   </Text>
-                  <ImageView fx:id="imgButton" fitHeight="24.0" fitWidth="59.0" onMousePressed="#submit" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@Button.png" />
-                     </image>
-                     <VBox.margin>
-                        <Insets top="50.0" />
-                     </VBox.margin>
-                  </ImageView>
                </children>
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="1.0" layoutY="294.0" prefHeight="100.0" prefWidth="600.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="54.0" prefWidth="600.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <ImageView fx:id="imgButton" fitHeight="24.0" fitWidth="59.0" onMousePressed="#submit" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Button.png" />
+                     </image>
+                  </ImageView>
+               </children>
             </VBox>
          </children>
       </HBox>
