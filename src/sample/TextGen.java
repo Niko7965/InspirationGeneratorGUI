@@ -87,7 +87,7 @@ public class TextGen {
        input1 = thecharacter(ThreadLocalRandom.current().nextInt(0,length("Character")));
        input2 = " " + thescene(ThreadLocalRandom.current().nextInt(0,length("Scene")));
        input3 = commaSpace(thetwist(ThreadLocalRandom.current().nextInt(0,length("Twist"))));
-        return (removePID(input1)) + input2 + insertPronoun(input3,getPronoun(input1));
+        return (removePID(input1)) + insertPronoun(input2,getPronoun(input1)) + insertPronoun(input3,getPronoun(input1));
 
     }
 
@@ -119,7 +119,7 @@ public class TextGen {
                     newSentence.append(pronoun);
             }
 
-            if(sentence.charAt(i) == '%'){
+            if(sentence.charAt(i) == '&'){
                 switch (pronounInt){
                     case 0:
                         pronoun = "him";
@@ -175,7 +175,7 @@ public class TextGen {
     String removePID(String input){
         String newinput = "";
         for(int i = 0, n = input.length(); i<n; i++){
-            if(input.charAt(i) != '*' && input.charAt(i) != '!' ){
+            if(input.charAt(i) != '*' && input.charAt(i) != '!'&& input.charAt(i) != '$' ){
                 newinput = newinput+input.charAt(i);
             }
         }
