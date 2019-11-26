@@ -101,25 +101,22 @@ public class TextGen {
     String verbinput3 = "";
     String pronouninput2 = "";
     String pronouninput3 = "";
+    int pronounInt;
 
    public String getInspiration(){
        input1 = thecharacter(ThreadLocalRandom.current().nextInt(0,length("TheCharacter")));
        input2 = " " + thescene(ThreadLocalRandom.current().nextInt(0,length("TheScene")));
        input3 = commaSpace(thetwist(ThreadLocalRandom.current().nextInt(0,length("TheTwist"))));
-    /*
-       System.out.println("---------");
-       System.out.print(getPronoun(input1));
-       System.out.println(" " + input1);
-       System.out.println(insertVerb(input3,getPronoun(input1)));
 
-     */
-       verbinput2 = insertVerb(input2, getPronoun(input1));
-       verbinput3 = insertVerb(input3, getPronoun(input1));
-       verbinput3 = insertVerb(verbinput3, getPronoun(input1));
-       pronouninput2 = insertPronoun(verbinput2, getPronoun(input1));
-       pronouninput3 = insertPronoun(verbinput3, getPronoun(input1));
+       pronounInt = getPronoun(input1);
 
-        return (removePID(input1)) + pronouninput2 + pronouninput3;
+       verbinput2 = insertVerb(input2, pronounInt);
+       verbinput3 = insertVerb(input3, pronounInt);
+       verbinput3 = insertVerb(verbinput3, pronounInt);
+       pronouninput2 = insertPronoun(verbinput2, pronounInt);
+       pronouninput3 = insertPronoun(verbinput3, pronounInt);
+
+        return (removePID(input1)) + removePID(pronouninput2) + removePID( pronouninput3);
        //return (removePID(input1)) + insertPronoun(input2,getPronoun(input1)) + insertPronoun(input3,getPronoun(input1));
 //insertverb virker ikke optimalt
     }
