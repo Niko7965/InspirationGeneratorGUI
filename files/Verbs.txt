@@ -4,7 +4,7 @@ goes go
 has have
 attempts attempt
 enjoys enjoy
-reminisces reminsce
+reminisces reminisce
 stabs stab
 jumps jump
 embarks embark
@@ -39,3 +39,7 @@ kicks kick
 lives live
 defeats defeat
 commits commit
+gets get
+ties tie
+licks lick
+marries marry
