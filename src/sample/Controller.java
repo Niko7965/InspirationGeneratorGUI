@@ -19,14 +19,9 @@ public class Controller {
 
 
     @FXML private void submit(MouseEvent event){
-        if(TitleText.getText() != "En grim vinter"){
-            TitleText.setText("En grim vinter");
 
-        }
-        else{
             TitleText.setText(textgen.getInspiration());
 
-        }
 
     }
 }

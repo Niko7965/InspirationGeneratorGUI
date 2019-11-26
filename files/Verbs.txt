@@ -39,3 +39,5 @@ kicks kick
 lives live
 defeats defeat
 commits commit
+attacks attack
+questions question
