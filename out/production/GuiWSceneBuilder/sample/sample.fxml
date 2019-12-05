@@ -41,7 +41,7 @@
                   <Insets />
                </opaqueInsets>
                <children>
-                  <ImageView fx:id="imgButton" fitHeight="24.0" fitWidth="59.0" onMousePressed="#submit" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imgButton" fitHeight="83.0" fitWidth="226.0" onMouseEntered="#hoverAnimation" onMouseExited="#exitAnimation" onMousePressed="#submit" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@Button.png" />
                      </image>
