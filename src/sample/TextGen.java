@@ -116,7 +116,7 @@ public class TextGen {
        pronouninput2 = insertPronoun(verbinput2, pronounInt);
        pronouninput3 = insertPronoun(verbinput3, pronounInt);
 
-        return (removePID(input1)) + removePID(pronouninput2) + removePID( pronouninput3);
+        return (removePID(input1)) + (removePID(pronouninput2)) + (removePID( pronouninput3));
        //return (removePID(input1)) + insertPronoun(input2,getPronoun(input1)) + insertPronoun(input3,getPronoun(input1));
 //insertverb virker ikke optimalt
     }
