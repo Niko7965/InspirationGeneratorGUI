@@ -8,6 +8,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
+import javafx.scene.layout.Region;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -17,7 +18,8 @@ import java.util.concurrent.TimeUnit;
 
 public class Controller {
     public ImageView imgButton;
-    public ImageView backgroundImg;
+    public Region regionImg;
+    public ImageView wallpaper;
     public TextGen textgen = new TextGen();
     @FXML private Text TitleText;
     //@FXML private ImageView imgButton;
@@ -38,9 +40,11 @@ public class Controller {
 
     }
 
-    @FXML private void submit(MouseEvent event){
+    @FXML private void submit(MouseEvent event) throws FileNotFoundException {
             TitleText.setText(textgen.getInspiration());
-
-
+            int rand = ThreadLocalRandom.current().nextInt(1,5);
+            FileInputStream input = new FileInputStream("Images/Backgrounds/"+rand+".png");
+            Image image = new Image(input);
+            wallpaper.setImage(image);
     }
 }
