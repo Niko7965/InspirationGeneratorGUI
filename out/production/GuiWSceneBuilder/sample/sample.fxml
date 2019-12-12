@@ -18,11 +18,7 @@
          <effect>
             <GaussianBlur radius="28.05" />
          </effect></Region>
-      <ImageView fx:id="wallpaper" fitHeight="800.0" fitWidth="1200.0" layoutX="-508.0" layoutY="-235.0" opacity="0.84" pickOnBounds="true" preserveRatio="true" scaleX="2.0" scaleY="2.0" scaleZ="2.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <effect>
-            <GaussianBlur radius="28.3" />
-         </effect>
-      </ImageView>
+      <ImageView fx:id="wallpaper" fitHeight="800.0" fitWidth="1200.0" layoutX="-508.0" layoutY="-235.0" opacity="0.84" pickOnBounds="true" preserveRatio="true" scaleX="1.2" scaleZ="2.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
       <HBox alignment="CENTER" layoutY="150.0" prefHeight="100.0" prefWidth="600.0" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
          <children>
             <VBox alignment="CENTER" prefHeight="54.0" prefWidth="600.0">
