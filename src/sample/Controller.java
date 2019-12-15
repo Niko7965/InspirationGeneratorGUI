@@ -42,8 +42,8 @@ public class Controller {
 
     @FXML private void submit(MouseEvent event) throws FileNotFoundException {
             TitleText.setText(textgen.getInspiration());
-            int rand = ThreadLocalRandom.current().nextInt(1,8);
-            FileInputStream input = new FileInputStream("Images/Backgrounds/"+rand+".png");
+            int rand = ThreadLocalRandom.current().nextInt(1,15);
+            FileInputStream input = new FileInputStream("Images/Backgrounds/a"+rand+".png");
             Image image = new Image(input);
             wallpaper.setImage(image);
     }
