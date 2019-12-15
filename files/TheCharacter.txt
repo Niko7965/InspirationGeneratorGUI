@@ -4,7 +4,6 @@ The president of the US
 *John Snow
 *A drunken monk
 !Your mom
-GUYS WE NEED SPACES
 A war-torn vetran
 Adam the newspaperguy
 An aboriginal
@@ -20,7 +19,7 @@ A time traveller
 An Indian tech supporter
 A sentient crab
 *Your fake brother
-An imaginary woman
+!An imaginary woman
 The reader
 A stinky sock
 An award-winning actor
@@ -50,7 +49,7 @@ A surgically enhanced magpie
 A sad angel
 The raddest middle schooler
 A scratched champion concept
-Ra
-Mars
+*Ra
+*Mars
 A Vishnu look-alike
 A non-boobed creature
